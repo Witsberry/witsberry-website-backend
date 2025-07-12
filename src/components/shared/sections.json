@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_sections",
+  "info": {
+    "displayName": "Sections",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
