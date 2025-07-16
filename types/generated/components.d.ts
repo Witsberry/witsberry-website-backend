@@ -11,6 +11,16 @@ export interface BlogSection extends Struct.ComponentSchema {
   };
 }
 
+export interface ProductTypes extends Struct.ComponentSchema {
+  collectionName: 'components_product_types';
+  info: {
+    displayName: 'types';
+  };
+  attributes: {
+    tags: Schema.Attribute.String;
+  };
+}
+
 export interface ProjectTestimonials extends Struct.ComponentSchema {
   collectionName: 'components_project_testimonials';
   info: {
@@ -100,6 +110,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'blog.section': BlogSection;
+      'product.types': ProductTypes;
       'project.testimonials': ProjectTestimonials;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
